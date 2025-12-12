@@ -1,0 +1,90 @@
+DATASET DESCRIPTION
+===================
+
+Number of Rows: 135206
+Number of Features: 14
+
+
+FEATURES
+--------
+
+1. visit_count
+   Type: Numeric
+   Meaning: Number of times this animal has visited the shelter (1 meaning the animal has come to the shelter for the first time)
+
+2. intake_type
+   Type: Categorical
+   Unique Values: 6
+   Categories: Abandoned, Euthanasia Request, Owner Surrender, Public Assist, Stray, Wildlife
+   Meaning: The reason/method by which the animal entered the shelter
+
+3. intake_condition
+   Type: Categorical
+   Unique Values: 20
+   Categories: Aged, Agonal, Behavior, Congenital, Feral, Injured, Med Attn, Med Urgent, Medical, Neonatal, Neurologic, Normal, Nursing, Other, Panleuk, Parvo, Pregnant, Sick, Space,   Unknown
+   Meaning: The physical/medical condition of the animal when it entered the shelter
+
+4. animal_type
+   Type: Categorical
+   Unique Values: 2
+   Categories: Cat, Dog
+   Meaning: The species of the animal
+
+5. outcome_type
+   Type: Categorical
+   Unique Values: 6
+   Categories: Adoption, Died, Euthanasia, Other, Return to Owner, Transfer
+   Meaning: What happened to the animal when it left the shelter (TARGET VARIABLE for prediction)
+
+6. HasName
+   Type: Categorical
+   Unique Values: 2
+   Categories: 0 (no name), 1 (has name)
+   Meaning: Whether the animal had a name when it entered the shelter
+
+7. intake_month_num
+   Type: Numeric (Cyclical)
+   Unique Values: 12
+   Categories: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+   Meaning: The month of the year when the animal was taken in (1=January to 12=December)
+
+8. intake_weekday_num
+   Type: Numeric (Cyclical)
+   Unique Values: 7
+   Categories: 0, 1, 2, 3, 4, 5, 6
+   Meaning: The day of the week when the animal was taken in (0=Monday to 6=Sunday)
+
+9. intake_hour
+   Type: Numeric (Cyclical)
+   Unique Values: 24
+   Range: 0 to 23
+   Meaning: The hour of the day when the animal was taken in (0=midnight, 23=11pm)
+
+10. breed
+    Type: Categorical
+    Unique Values: 2716 (too many to list)
+    Meaning: The breed of the animal
+
+11. color
+    Type: Categorical
+    Unique Values: 616 (too many to list)
+    Meaning: The color of the animal
+
+
+12. intactness
+    Type: Categorical
+    Unique Values: 3
+    Categories: intact, not_intact, unknown
+    Meaning: Whether the animal has been spayed/neutered
+
+13. sex
+    Type: Categorical
+    Unique Values: 3
+    Categories: female, male, unknown
+    Meaning: The sex/gender of the animal
+
+14. age_days_intake
+    Type: Numeric
+    Meaning: The age of the animal (in days) at the time of intake
+
+
