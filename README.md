@@ -24,16 +24,16 @@ artifacts needed to reproduce the results.
 - `results/` — outputs (saved models/metrics/predictions, **.pkl** files)  
 - `src/` — all code (notebooks/scripts)  
 - `report/` — final PDF report  
-## Environment (reproducible)
 
+## Environment (reproducible)
 This repo includes a Conda YAML environment: `data1030.yml`
 
-- **Env name:** data1030  
-- **Python:** 3.12.10  
+- **Env name:** `data1030`
+- **Python:** `3.12.10`
 - **Key packages:** numpy 2.2.5, pandas 2.2.3, polars 1.27.1, scikit-learn 1.6.1, xgboost 3.0.0, shap 0.47.2, matplotlib 3.10.1, seaborn 0.13.2
 
 ### Create the environment
 ```bash
 conda env create -f data1030.yml
 conda activate data1030
-
+python -c "import numpy,pandas,sklearn,xgboost,shap; print('OK')"
