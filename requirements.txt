@@ -1,0 +1,11 @@
+# pip alternative to data1030.yml (Conda).
+# Tested with Python 3.12.10.
+numpy==2.2.5
+pandas==2.2.3
+polars==1.27.1
+scikit-learn==1.6.1
+xgboost==3.0.0
+shap==0.47.2
+matplotlib==3.10.1
+seaborn==0.13.2
+jupyter
